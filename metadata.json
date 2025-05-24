@@ -1,0 +1,5 @@
+{
+  "name": "FluxCalc - Premium Multifunction Calculator",
+  "description": "A modern, premium GUI calculator featuring standard and scientific modes, unit conversion, and AI-assisted currency conversion. Built with React, TypeScript, and Tailwind CSS, with smooth animations and a sleek design.",
+  "requestFramePermissions": []
+}

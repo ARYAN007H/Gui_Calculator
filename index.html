@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FluxCalc - Premium Multifunction Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* For custom scrollbars if needed, though Tailwind doesn't directly control this easily */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #171717; /* neutral-900 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #f97316; /* orange-500 */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ea580c; /* orange-600 */
+    }
+
+    /* Mode Transition Animations */
+    .mode-content-enter {
+      opacity: 0;
+      transform: translateY(15px) scale(0.99);
+    }
+    .mode-content-enter-active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      transition: opacity 300ms ease-out, transform 300ms ease-out;
+    }
+    .mode-content-exit {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    .mode-content-exit-active {
+      opacity: 0;
+      transform: translateY(-15px) scale(0.99);
+      transition: opacity 200ms ease-in, transform 200ms ease-in;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.0.1",
+    "react-transition-group": "https://esm.sh/react-transition-group@4.4.5",
+    "react-transition-group/": "https://esm.sh/react-transition-group@4.4.5/"
+  }
+}
+</script>
+</head>
+<body class="bg-neutral-950 text-gray-100">
+  <div id="root"></div>
+  <!-- Load Babel Standalone -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Change script type to text/babel and add presets for React and TypeScript -->
+  <script type="text/babel" data-presets="react,typescript" data-type="module" src="/index.tsx"></script>
+</body>
+</html>

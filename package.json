@@ -1,0 +1,27 @@
+{
+  "name": "fluxcalc",
+  "version": "1.0.0",
+  "description": "FluxCalc - Premium Multifunction Calculator. A modern GUI calculator built with React, TypeScript, and Tailwind CSS.",
+  "scripts": {
+    "start": "echo \"To run this project, open index.html in your browser. For local development with a bundler (like Vite), you would typically have a 'dev' or 'start' script here (e.g., 'vite').\"",
+    "build": "echo \"For a full build process, you would configure scripts for TypeScript compilation and bundling here.\"",
+    "lint": "echo \"Consider adding a linter like ESLint and a corresponding script.\"",
+    "tailwind:watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.1",
+    "jsonfile": "^6.1.0",
+    "package.json": "^2.0.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-transition-group": "4.4.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0-rc.0",
+    "@types/react-dom": "^19.0.0-rc.0",
+    "@types/react-transition-group": "^4.4.10",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  },
+  "private": true
+}
